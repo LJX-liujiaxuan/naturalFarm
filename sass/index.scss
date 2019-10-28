@@ -1,0 +1,269 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,hr,td,input,textarea{
+    margin:0;
+    padding:0;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+img{
+    border:none;
+    display: block;
+}
+html{
+    font-size: 26.67vw;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-family: "微软雅黑";
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+//header
+header{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    .logo{
+        width: 0.6rem;
+        height: 0.5rem; 
+        display: block;
+    }
+    .sousuo{
+        width: 70%;
+        height: 0.32rem;
+        background: gainsboro;
+        border-radius: 0.25rem;
+        margin-top: .08rem;
+        display: flex;
+        img{
+            width: .28rem;
+            height: .28rem;
+            margin-top: .02rem;
+        }
+        input{
+            width: 80%;
+            height: .25rem;
+            margin-left: .14rem;
+            margin-top: .04rem;
+            border: none;
+            outline: none;
+            padding-left: 10px;
+            background: gainsboro;
+            font-size: .12rem;
+        }
+    }
+    .qiandao{
+        width: .24rem;
+        height: .24rem;
+        margin-top: .14rem;
+        margin-left: 32px;
+    }
+}
+.header2{
+    width: 100%;
+    height: .314rem;
+    display: flex;
+    overflow-x: auto;
+    a{
+        display: block;
+        height: .3rem;
+        padding: 0 40px;
+        line-height: .3rem;
+        font-size: .12rem;
+        color: grey;
+        flex-shrink: 0;
+    }
+}
+.header2 a:first-child{
+    color: olivedrab;
+    border-bottom: 5px solid forestgreen;
+}
+
+
+.main{
+    flex: 1;
+    overflow-y: auto;
+}
+//banner
+.banner{
+    width: 100%;
+    height: 1.2rem;
+    padding: 40px 0;
+    img{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .swiper-pagination li{
+        width: 20px;
+        height: 20px;
+        background: white;
+    }
+}
+
+
+//remai
+.remai{
+    width: 98%;
+    height: .9rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 8px 20px 10px gainsboro;
+    a{
+        display: block;
+        img{
+            width: .6rem;
+            height: .6rem;
+            display: block;
+            margin-bottom: 14px;
+        }
+        span{
+            color: grey;
+            font-size: .12rem;
+        }
+    }
+}
+
+
+//tuijian
+.tuijian{
+    width: 100%;
+    overflow: hidden;
+    padding-top: .12rem;
+    .tjimg{
+        width: 100%;
+        height: 1rem;
+    }
+    .tj{
+        width: 100%;
+        ul{
+            display: flex;
+            overflow-x: auto;
+            li{
+                width: 1rem;
+                margin: 20px;
+                text-align: center;
+                img{
+//                  width: 100%;
+                    margin-bottom: 20px;
+                }
+                .miaoshu{
+                    display: block;
+                    color: gray;
+                    font-size: .14rem;
+                    text-align: left;
+                    width: 1.1rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .price{
+                    color: #f40;
+                    font-size: .16rem;
+                }
+                .ckgd{
+                    display: block;
+                    width: 1rem;
+                    height: 1.08rem;
+                    line-height: 1.08rem;
+                    color: #f40;
+                    font-size: .11rem;
+                }
+            }
+        }
+        
+    }
+}
+
+//xsqg
+.xsqg{
+    width: 100%;
+    overflow: hidden;
+    padding-top: .12rem;
+    .xsqgtt{
+        width: 100%;
+        height: .26rem;
+        padding-left: .14rem;
+        img{
+            width: .2rem;
+            height: .2rem;
+            display: inline-block;
+            position: relative;
+            top: 10px;
+        }
+        span{
+            display: inline-block;
+            color: black;
+            font-size: .16rem;
+            line-height: .2rem;
+            padding-left: .1rem;
+        }
+    }
+    .tj{
+        width: 100%;
+        ul{
+            display: flex;
+            overflow-x: auto;
+            li{
+                width: 1rem;
+                margin: 20px;
+                text-align: center;
+                img{
+                    margin-bottom: 20px;
+                }
+                .miaoshu{
+                    display: block;
+                    color: gray;
+                    font-size: .14rem;
+                    text-align: left;
+                    width: 1.1rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .price{
+                    color: #f40;
+                    font-size: .16rem;
+                }
+                .ckgd{
+                    display: block;
+                    width: 1rem;
+                    height: 1.08rem;
+                    line-height: 1.08rem;
+                    color: #f40;
+                    font-size: .11rem;
+                }
+            }
+        }
+        
+    }
+}
+
+//footer
+footer{
+    width: 100%;
+    height: .6rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    img{
+        width: .3rem;
+        height: .3rem;
+        display: block;
+        margin-bottom: 12px;
+        margin-top: 12px;
+    }
+    span{
+        color: gray;
+        font-size: .14rem;
+    }
+}
