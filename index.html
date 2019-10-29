@@ -104,33 +104,41 @@
 				<div class="xsqgtt">
 					<img src="img/index/biaoti.png" alt="" />
 					<span>限时抢购</span>
+					<div class="djs">
+						<span>倒计时：</span>
+						<span id="hours">12</span>
+						<span>:</span>
+						<span id="minutes">00</span>
+						<span>:</span>
+						<span id="seconds">00</span>
+					</div>
 				</div>
 				<div class="tj"> 
 					<ul>
 						<li>
-							<img src="img/index/tj01.png" alt="" />
-							<span class="miaoshu">秋品上新-大闸蟹（前500名领券立减10元）</span>
-							<span class="price">￥89.9</span>
+							<img src="img/index/xsqg01.png" alt="" />
+							<span class="miaoshu">智力进口车厘子（带箱三斤）</span>
+							<span class="price">￥129</span>
 						</li>
 						<li>
-							<img src="img/index/tj02.png" alt="" />
-							<span class="miaoshu">黑米-立减10元</span>
-							<span class="price">￥38.4</span>
+							<img src="img/index/xsqg02.png"" alt="" />
+							<span class="miaoshu">牛油果-抢购价9.9元</span>
+							<span class="price">￥9.9</span>
 						</li>
 						<li>
-							<img src="img/index/tj03.png" alt="" />
-							<span class="miaoshu">爆款海鲜-买两斤送一斤</span>
+							<img src="img/index/xsqg03.png"" alt="" />
+							<span class="miaoshu">新鲜橙子-满两斤包邮</span>
+							<span class="price">￥9.9</span>
+						</li>
+						<li>
+							<img src="img/index/xsqg04.png"" alt="" />
+							<span class="miaoshu">水果大聚会-新鲜直采，双仓发货</span>
 							<span class="price">￥45</span>
 						</li>
 						<li>
-							<img src="img/index/tj04.png" alt="" />
-							<span class="miaoshu">枸杞-满2减15</span>
-							<span class="price">￥45</span>
-						</li>
-						<li>
-							<img src="img/index/tj05.png" alt="" />
-							<span class="miaoshu">月饼-2件减10元，3件减25元</span>
-							<span class="price">￥158</span>
+							<img src="img/index/xsqg05.png"" alt="" />
+							<span class="miaoshu">新鲜脐橙-满50减20</span>
+							<span class="price">￥58</span>
 						</li>
 						<li>
 							<a class="ckgd" href="#">查看更多>>></a>
@@ -138,22 +146,26 @@
 					</ul>
 				</div>
 			</div>
+			<!--tishi-->
+			<div class="tishi">
+				亲，已经到底喽！
+			</div>
 		</div>
 		<!--footer-->
 		<footer>
-			<a href="#">
+			<a href="index.html">
 				<img src="img/index/shouye.png"/>
 				<span>首页</span>
 			</a>
-			<a href="#">
+			<a href="sort.html">
 				<img src="img/index/fenlei.png"/>
 				<span>分类</span>
 			</a>
-			<a href="#">
+			<a href="shoppingCart.html">
 				<img src="img/index/gouwuche.png"/>
 				<span>购物车</span>
 			</a>
-			<a href="#">
+			<a href="my.html">
 				<img src="img/index/wode.png"/> 
 				<span>我的</span>
 			</a>
@@ -162,13 +174,4 @@
 
 </html>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-<script>
-	var mySwiper = new Swiper('.swiper-container', {
-		loop: true, 
-		autoplay:true,
-		pagination: {
-			el: '.swiper-pagination',
-    		bulletElement : 'li',
-		},
-	})
-</script>
+<script src="js/index.js"></script>
