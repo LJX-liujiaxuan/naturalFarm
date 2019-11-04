@@ -164,31 +164,34 @@ header{
     ul{
         display: flex;
         flex-wrap: wrap;
-        li{
-           width: 50%; 
-           text-align: center;
-           img{
-               width: 80%;
-               margin: 0 auto;
-               margin-top: .14rem;
-               margin-bottom: .1rem;
-           }
-           .miaoshu{
-               color: black;
-               font-size: .16rem;
-               display: block;
-               width: 1.4rem;
-               white-space: nowrap;
-               overflow: hidden;
-               text-overflow: ellipsis;
-               padding-left: .1rem;
-           }
-           .price{
-               display: block;
-               color: #f40;
-               font-size: .18rem;
-               margin-top: .06rem;
-           }
+        a{
+            width: 50%;
+            li{
+               width: 100%; 
+               text-align: center;
+               img{
+                   width: 80%;
+                   margin: 0 auto;
+                   margin-top: .14rem;
+                   margin-bottom: .1rem;
+               }
+               .miaoshu{
+                   color: black;
+                   font-size: .16rem;
+                   display: block;
+                   width: 1.4rem;
+                   white-space: nowrap;
+                   overflow: hidden;
+                   text-overflow: ellipsis;
+                   padding-left: .1rem;
+               }
+               .price{
+                   display: block;
+                   color: #f40;
+                   font-size: .18rem;
+                   margin-top: .06rem;
+               }
+            }
         }
     }
 }

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html style="font-size: 58.5938px;">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<title>商品详情</title>
+
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link href="css/app.css" rel="stylesheet">
+
+	</head>
+
+	<body class="item">
+
+		<section class="home">
+			<a href="#" style="font-size: .3rem; color: black; line-height: .6rem; padding-left: .2rem;">草莓正品旗舰店</a>
+		</section>
+
+		<section class="images">
+			<div style="width: 100%; margin-left: .8rem; margin-top: .3rem;">
+				<img src="img/sort/sg01.png">
+			</div>
+		</section>
+
+		<section class="header" style="margin-left: .3rem;">
+			<h2 class="title">新鲜水果草莓（五斤装）  </h2>
+			<div class="price ">
+				<div class="current-price">
+					<span class="current-price"><small>￥</small>99.99</span>
+				</div>
+				<span class="express">¥20.00</span>
+			</div>
+			<div class="sales">已经领取: 200 剩余: 1800</div>
+		</section>
+
+		<section class="content">
+			<div class="nav">
+				<a class="active">商品详细</a>
+				<a>兑换记录</a>
+			</div>
+			<div class="desc">
+				<img width="100%" src="img/sort/sg02.png">
+				<img width="100%" src="img/sort/sg03.png">
+				<img width="100%" src="img/sort/sg04.png">
+
+			</div>
+		</section>
+
+		<section class="layer">
+			<div class="content">
+				<div class="head">
+					<a class="close"></a>
+				</div>
+				<div class="bd">
+					<dl>
+						<dt>本网价</dt>
+						<dd><span>￥<b>6.80</b></span></dd>
+					</dl>
+					<dl>
+						<dt>颜色</dt>
+						<dd>
+							<ul id="sku">
+								<li>
+									<a data-sku="10" class="active">红色</a><i></i></li>
+								<li>
+									<a data-sku="11">粉色</a><i></i></li>
+								<li>
+									<a data-sku="12">碎花</a><i></i></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+				<div class="foot">
+					<a class="next" data-id="10" href="{:U('buy')}?id=10">下一步</a>
+				</div>
+			</div>
+
+		</section>
+
+		<footer class="footer">
+			<span class="server"><a href="sort.html" style="font-size: .14rem; line-height: .58rem; text-align: center;">返回</a></span>
+			<div class="button">
+				<a href="shoppingCart.html" class="buy">加入购物车</a>
+			</div>
+		</footer>
+
+		<script>
+			var path = "{:U('buy')}?id=";
+			//兼容性：字体大小，全局尺寸(rem)
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						var docElWidth = 100 * (clientWidth / 640);
+						if(docElWidth > 100) docElWidth = 100;
+						docEl.style.fontSize = docElWidth + 'px';
+					};
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+
+		</script>
+
+	</body>
+
+</html>
